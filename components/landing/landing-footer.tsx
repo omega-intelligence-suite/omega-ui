@@ -14,31 +14,31 @@ export function LandingFooter() {
           {/* Brand */}
           <div className="space-y-4 md:col-span-2">
             <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-omega-green to-omega-purple flex items-center justify-center shadow-lg shadow-omega-green/10">
-                <span className="text-white font-bold text-xl font-sans">Ω</span>
+              <div className="flex gap-1 flex-wrap items-center" style={{ maxWidth: '30%' }}>
+                <p className="font-mono text-sm text-slate-600">OMEGA</p>
+                <p className="font-mono text-sm text-slate-200" style={{ color: 'rgba(20, 235, 163, 0.8)' }}>INTELLIGENCE</p>
               </div>
-              <span className="text-2xl font-bold tracking-tighter text-white font-sans">OMEGA</span>
             </div>
             <p className="text-zinc-400 leading-relaxed max-w-sm font-sans">
               Your Wealth Operating System. Engineered for strategic accumulation on the 2026-2035 cycle.
             </p>
             <div className="flex gap-3">
               <a
-                href="#"
+                href="https://github.com/omega-intelligence-suite"
                 className="inline-flex p-2.5 rounded-lg bg-zinc-900 border border-zinc-800 hover:bg-zinc-800 hover:border-zinc-700 transition-all group"
                 aria-label="GitHub"
               >
                 <Github className="w-5 h-5 text-zinc-400 group-hover:text-omega-green transition-colors" />
               </a>
-              <a
+              {/* <a
                 href="#"
                 className="inline-flex p-2.5 rounded-lg bg-zinc-900 border border-zinc-800 hover:bg-zinc-800 hover:border-zinc-700 transition-all group"
                 aria-label="Twitter"
               >
                 <Twitter className="w-5 h-5 text-zinc-400 group-hover:text-omega-green transition-colors" />
-              </a>
+              </a> */}
               <a
-                href="#"
+                href="mailto:omegaintelligencesuite@gmail.com"
                 className="inline-flex p-2.5 rounded-lg bg-zinc-900 border border-zinc-800 hover:bg-zinc-800 hover:border-zinc-700 transition-all group"
                 aria-label="Email"
               >
@@ -91,7 +91,7 @@ export function LandingFooter() {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-zinc-400 hover:text-omega-purple transition-colors font-sans">
+                <a href="mailto:omegaintelligencesuite@gmail.com" className="text-sm text-zinc-400 hover:text-omega-purple transition-colors font-sans">
                   Support
                 </a>
               </li>
@@ -110,15 +110,15 @@ export function LandingFooter() {
             © {currentYear} OMEGA. Built with precision and discipline.
           </p>
           <div className="flex gap-6">
-            <a href="#" className="text-sm text-zinc-500 hover:text-zinc-300 transition-colors font-mono">
+            <Link href="/privacy" className="text-sm text-zinc-500 hover:text-zinc-300 transition-colors font-mono">
               Privacy Policy
-            </a>
-            <a href="#" className="text-sm text-zinc-500 hover:text-zinc-300 transition-colors font-mono">
+            </Link>
+            <Link href="/terms" className="text-sm text-zinc-500 hover:text-zinc-300 transition-colors font-mono">
               Terms of Service
-            </a>
-            <a href="#" className="text-sm text-zinc-500 hover:text-zinc-300 transition-colors font-mono">
+            </Link>
+            <Link href="/security" className="text-sm text-zinc-500 hover:text-zinc-300 transition-colors font-mono">
               Security
-            </a>
+            </Link>
           </div>
         </div>
       </div>

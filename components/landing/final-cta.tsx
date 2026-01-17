@@ -6,7 +6,7 @@ import { useState } from "react";
 
 export function FinalCTA() {
   const [copied, setCopied] = useState(false);
-  const command = "git clone https://github.com/omega-intelligence-suite/omega-core.git && cd omega-core && ./setup.sh";
+  const command = " && cd omega-core && ./setup.sh";
 
   const handleCopy = () => {
     navigator.clipboard.writeText(command);
@@ -40,7 +40,11 @@ export function FinalCTA() {
           <div className="p-6 font-mono text-sm relative group">
             <div className="flex items-start gap-3 text-zinc-300">
               <span className="text-omega-green select-none">$</span>
-              <p className="break-all">{command}</p>
+              <p className="break-all">git clone https://github.com/omega-intelligence-suite/omega-core.git</p>
+            </div>
+            <div className="flex items-start gap-3 text-zinc-300">
+              <span className="text-omega-green select-none">$</span>
+              <p className="break-all">cd omega-core && ./setup.sh</p>
             </div>
 
             <button
