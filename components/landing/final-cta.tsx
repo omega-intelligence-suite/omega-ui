@@ -6,7 +6,7 @@ import { useState } from "react";
 
 export function FinalCTA() {
   const [copied, setCopied] = useState(false);
-  const command = "git clone https://github.com/ayvroud/omega-core.git && cd omega-core && ./setup.sh";
+  const command = "git clone https://github.com/omega-intelligence-suite/omega-core.git && cd omega-core && ./setup.sh";
 
   const handleCopy = () => {
     navigator.clipboard.writeText(command);
@@ -55,7 +55,7 @@ export function FinalCTA() {
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link
-            href="https://github.com/ayvroud/omega-core"
+            href="https://github.com/omega-intelligence-suite/omega-core"
             target="_blank"
             className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-lg bg-omega-green text-zinc-950 font-bold text-lg overflow-hidden transition-all hover:bg-emerald-400 w-full sm:w-auto"
           >
