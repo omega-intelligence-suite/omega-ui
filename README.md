@@ -46,10 +46,10 @@ npm install
 ```
 
 ### 2. Configure Environment
-Create a `.env.local` file in the root directory:
+Create a `.env` file in the root directory:
 
 ```bash
-cp .env.example .env.local
+cp .env.example .env
 ```
 
 Fill in your Supabase credentials (found in your Project Settings > API):
