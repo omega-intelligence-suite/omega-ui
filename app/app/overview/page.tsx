@@ -88,8 +88,8 @@ export default function OverviewPage() {
             {/* Message si pas d'assets */}
             {computedAssets.length === 0 && assets !== null && (
               <div className="text-center py-12">
-                <p className="text-slate-400 font-mono">Aucun actif trouvé</p>
-                <p className="text-slate-500 text-sm mt-2">Synchronisez votre portefeuille pour voir les analyses</p>
+                <p className="text-slate-400 font-mono">No assets found</p>
+                <p className="text-slate-500 text-sm mt-2">Sync your portfolio to see analyses</p>
               </div>
             )}
 
