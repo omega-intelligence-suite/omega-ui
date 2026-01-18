@@ -1,9 +1,27 @@
+// ASSETS
+export interface UserAsset {
+  id: string
+  name: string
+  symbol: string
+  type: 'CRYPTO' | 'STOCKS_ETFS'
+  balance: number
+  average_price: number
+  current_price: number
+  change_24h: number
+  icon_url: string
+  target_price_usd?: number | null
+  last_price_sync_at?: string | null
+  last_wallet_sync_at?: string | null
+}
+
 export interface AssetTarget {
   id: string
   symbol: string
   target_price_usd: number
 };
 
+
+// INTELLIGENCE
 export interface DailyFlash {
   id: string
   brief: string
@@ -18,6 +36,17 @@ export interface MarketAnalysis {
   created_at: string
 }
 
+export interface WalletBrief {
+  id: string
+  summary: string
+  risk_score: number
+  narrative_score: number
+  velocity_score: number
+  btc_accumulation_index: number
+  created_at: string
+}
+
+// NEWS
 export interface NewsSignal {
   id: string
   title: string
@@ -29,33 +58,8 @@ export interface NewsSignal {
   published_at: string
 }
 
-export interface WalletBrief {
-  id: string
-  summary: string
-  risk_score: string
-  narrative_score: string
-  velocity_score: string
-  btc_accumulation_index: string
-  created_at: string
-}
 
-export interface UserAsset {
-  id: string
-  name: string
-  symbol: string
-  type: 'CRYPTO' | 'STOCKS_ETFS'
-  pillar: number
-  balance: number
-  average_price: number
-  current_price: number
-  change_24h: number
-  icon_url: string
-  target_price_usd?: number | null
-  udpated_at: string
-  last_price_sync_at?: string | null
-  last_wallet_sync_at?: string | null
-}
-
+// SNAPSHOTS
 export interface PortfolioSnapshot {
   id: string
   total_value_eur: number
