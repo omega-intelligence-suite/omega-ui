@@ -1,16 +1,10 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
 import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
 
 import { colors } from "@/config";
 
 import "./globals.css";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: '--font-inter',
-});
 
 export const viewport: Viewport = {
   themeColor: '#000000', // Ta couleur de bandeau
@@ -44,7 +38,7 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
       </head>
-      <body className={`${GeistSans.variable} ${GeistMono.variable} ${inter.variable} font-sans`}>{children}</body>
+      <body className={`${GeistSans.variable} ${GeistMono.variable} font-sans`}>{children}</body>
     </html>
   );
 }

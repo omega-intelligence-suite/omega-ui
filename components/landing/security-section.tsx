@@ -49,13 +49,13 @@ export function SecuritySection() {
                   Your Fortress.
                 </span>
               </h2>
-              <p className="text-xl text-slate-400 leading-relaxed font-inter">
+              <p className="text-xl text-slate-400 leading-relaxed font-sans">
                 Built with a privacy-first philosophy. No compromises, no backdoors, no surveillance.
               </p>
             </div>
 
             {/* Description */}
-            <div className="space-y-4 text-slate-300 leading-relaxed font-inter">
+            <div className="space-y-4 text-slate-300 leading-relaxed font-sans">
               <p>
                 In an era of data breaches and centralized vulnerabilities,
                 <span className="text-omega-purple font-semibold"> OMEGA</span> gives you
@@ -111,7 +111,7 @@ export function SecuritySection() {
                       <h3 className="text-base font-bold tracking-tight text-slate-100 mb-2">
                         {feature.title}
                       </h3>
-                      <p className="text-sm text-slate-400 leading-relaxed font-inter">
+                      <p className="text-sm text-slate-400 leading-relaxed font-sans">
                         {feature.description}
                       </p>
                     </div>
@@ -134,7 +134,7 @@ export function SecuritySection() {
               </div>
               <div className="text-left">
                 <h3 className="text-lg font-bold tracking-tight text-slate-100">Zero-Knowledge Architecture</h3>
-                <p className="text-sm text-slate-400 font-inter">We can't access your data even if we wanted to</p>
+                <p className="text-sm text-slate-400 font-sans">We can't access your data even if we wanted to</p>
               </div>
             </div>
             <a
