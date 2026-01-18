@@ -52,7 +52,7 @@ Create a `.env` file in the root directory:
 cp .env.example .env
 ```
 
-Fill in your Supabase credentials (found in your Project Settings > API):
+Fill in your Supabase credentials (found in your **Project Settings > API**):
 
 ```env
 NEXT_PUBLIC_SUPABASE_URL="https://your-project-ref.supabase.co"
