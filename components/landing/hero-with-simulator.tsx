@@ -74,19 +74,18 @@ export function HeroWithSimulator() {
             {/* CTA */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                href="/app/overview"
+                href="#methodology"
                 className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-lg bg-omega-green text-zinc-950 font-bold text-lg overflow-hidden transition-all hover:bg-emerald-400"
               >
-                <Terminal className="w-5 h-5" />
-                <span className="relative z-10">Deploy Your OS</span>
+                <span className="relative z-10">Explore the 2035 Roadmap</span>
               </Link>
 
               <Link
-                href="#methodology"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg border border-zinc-800 bg-zinc-900/50 backdrop-blur-sm font-medium text-lg text-zinc-300 transition-all hover:bg-zinc-800 hover:text-white hover:border-zinc-700"
+                href="/deploy"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg border border-zinc-800 bg-zinc-900/50 backdrop-blur-sm font-medium text-lg text-omega-green font-mono transition-all hover:bg-zinc-800 hover:text-emerald-400 hover:border-zinc-700"
               >
-                View Methodology
-                <ArrowRight className="w-4 h-4" />
+                <Terminal className="w-5 h-5" />
+                Deploy OMEGA-Core
               </Link>
             </div>
 

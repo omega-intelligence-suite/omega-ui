@@ -10,11 +10,14 @@ import { MethodologySection } from '@/components/landing/methodology-section';
 import { FinalCTA } from '@/components/landing/final-cta';
 import { LandingFooter } from '@/components/landing/landing-footer';
 
+import { MissionArchitecture } from '@/components/landing/mission-architecture';
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-zinc-950">
       <HeroWithSimulator />
       <BentoFeatures />
+      <MissionArchitecture />
       <MethodologySection />
       <FinalCTA />
       <LandingFooter />
