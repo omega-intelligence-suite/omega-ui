@@ -16,6 +16,7 @@ import { colors } from "@/config";
 
 import type { UserAssetViewModel } from "@/types/viewModels";
 import type { AssetTarget } from "@/types/models";
+import { Brain } from "lucide-react";
 
 export default function OverviewPage() {
   const router = useRouter()
@@ -59,6 +60,9 @@ export default function OverviewPage() {
       <main className="flex-1 flex flex-col md:flex-row md:overflow-hidden md:min-h-0">
         <Sidebar />
         <div className="flex-1 md:overflow-y-auto p-4 md:p-8 pb-20 md:pb-8">
+          {/* <div className="" style={{ backgroundColor: 'black', width: '200px', height: '200px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <Brain width={150} height={150} style={{ color: colors.primary.green, filter: `drop-shadow(0 0 20px ${colors.primary.green})` }} />
+          </div> */}
           <div className="max-w-7xl mx-auto space-y-6">
             {/* Grille des composants */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
